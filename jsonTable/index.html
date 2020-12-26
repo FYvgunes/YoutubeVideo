@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dinamik Json Table</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card card-body" width="100%">
+          <input type="text" id="search-input" class="form-control" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <table class="table table-striped">
+    <tr class="bg-info">
+      <th class="bg-info" data-colname="name" data-order="desc">Name</th>
+      <th class="bg-info" data-colname="name" data-order="desc">Last Nane</th>
+      <th class="bg-info" data-colname="name" data-order="desc">Email</th>
+    </tr>
+    <tbody id="myTable"></tbody>
+  </table>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="/jsonTable/script.js"></script>
+</body>
+
+</html>
